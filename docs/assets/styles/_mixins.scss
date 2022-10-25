@@ -1,0 +1,76 @@
+@mixin copy-text-standard {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+@mixin copy-text-bold {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+}
+@mixin copy-text-semi-bold {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
+@mixin copy-text-uppercase {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+@mixin copy-text-standard-link {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $primary-turquoise-dark;
+}
+@mixin caption {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+@mixin caption-link {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $primary-turquoise-dark;
+}
+@mixin caption-bold {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+}
+@mixin button-label {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+}
+@mixin caption-small {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+}
+@mixin caption-small-bold {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+@mixin basic-input {
+    @include copy-text-standard;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid $greyscale-dark-grey;
+    padding: 8px 16px 10px 16px;
+    &:hover {
+        border: 1px solid $greyscale-black;
+    }
+    &:focus {
+        outline: none;
+        border: 2px solid $accent-orange !important;
+    }
+    &:disabled {
+        background-color: $greyscale-light-grey;
+    }
+}
